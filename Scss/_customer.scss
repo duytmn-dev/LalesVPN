@@ -1,0 +1,109 @@
+.customer {
+  margin-bottom: 65px;
+  &-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px 0;
+    margin-bottom: 60px;
+    h1 {
+      max-width: 447px;
+    }
+    p {
+      max-width: 555px;
+    }
+  }
+  &-list {
+    position: relative;
+    // display: flex;
+    // margin-bottom: 60px;
+    // align-items: center;
+    // gap: 0 50px;
+  }
+  &-item {
+    max-width: 400px;
+    padding: 30px;
+    border: 2px solid $gray-light-boder;
+    border-radius: 10px;
+  }
+  &-top {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+  }
+  &-rating {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+  }
+  &-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .slick-track {
+    display: flex;
+    gap: 0 50px;
+    margin-left: 40px;
+    margin-bottom: 73px;
+  }
+  .slick-dots {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    transform: translateY(50%);
+    button {
+      background-color: $gray-light-boder;
+      border-radius: 100rem;
+      width: 15px;
+      height: 15px;
+      color: $gray-light-boder;
+      border: none;
+    }
+  }
+  .slick-active {
+    button {
+      background-color: $primary-color;
+      width: 45px;
+      color: transparent;
+    }
+  }
+  .slick-arrow {
+    padding: 18px;
+    border-radius: 100rem;
+    border: 2px solid $primary-color;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+  }
+  .slick-prev {
+    background-color: $color-white;
+    right: 80px;
+    bottom: 0;
+  }
+  .slick-next {
+    background-color: $primary-color;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .customer {
+    margin-bottom: 0;
+  }
+}

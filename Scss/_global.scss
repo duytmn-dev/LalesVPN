@@ -1,0 +1,74 @@
+.wrapper {
+  // width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $color-white;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+body {
+  line-height: 1;
+  font-family: $font;
+  color: $text-color;
+  font-weight: 400;
+}
+.btn {
+  display: inline-block;
+  padding: 13px 45px;
+  border-radius: 100rem;
+  font-family: $font;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: none;
+  &-primary {
+    font-weight: 700;
+    background-color: $primary-color;
+    color: $color-white;
+  }
+  &-outline {
+    font-weight: 500;
+    color: $primary-color;
+    background-color: transparent;
+    border: solid 1px;
+  }
+  &-round {
+    min-width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    /*
+     * Sử dụng box Shadow
+     * box-shadow: 0 30px 54px 0 rgba(245, 56, 56, 0.35);
+    */
+    &::after {
+      content: "";
+      height: 100%;
+      width: 85%;
+      top: -15%;
+      left: 50%;
+      position: absolute;
+      background: rgba(245, 56, 56, 0.35);
+      filter: blur(27px);
+      border-radius: 10px;
+      transform: translate(-50%, 50%);
+    }
+  }
+}
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: $heading-color;
+}

@@ -1,0 +1,27 @@
+.network {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 35px;
+  &-title {
+    max-width: 383px;
+    margin-bottom: 20px;
+  }
+  &-desc {
+    max-width: 555px;
+    margin-bottom: 155px;
+  }
+}
+.partner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 767.98px) {
+  .network,
+  .partner {
+  }
+}

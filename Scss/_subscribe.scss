@@ -1,0 +1,37 @@
+.subscribe {
+  transform: translateY(50%);
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 58.5px 70px;
+    border-radius: 10px;
+    background-color: $color-white;
+  }
+  &-content {
+    max-width: 410px;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  &-btn {
+    padding: 17.5px 65px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .subscribe {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      transform: translateY(-70%);
+    }
+    .title,
+    .text {
+      text-align: center;
+    }
+    &-btn {
+      margin-top: 50px;
+    }
+  }
+}
