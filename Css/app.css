@@ -158,6 +158,31 @@ body {
     display: none;
   }
 }
+@media (hover: hover) {
+  .menu-link {
+    position: relative;
+    transition: all 0.25s linear;
+  }
+  .menu-link::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: #f53838;
+    transition: all 0.25s linear;
+  }
+  .menu-link:hover {
+    color: #f53838;
+  }
+  .menu-link:hover:after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}
 .hero {
   margin-bottom: 100px;
 }
