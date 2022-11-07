@@ -382,11 +382,8 @@ body {
 }
 
 @media screen and (max-width: 767.98px) {
-  .plan {
-    display: none;
-  }
   .plan-lists {
-    gap: 0 0px;
+    display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023.98px) {
@@ -418,6 +415,14 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .network-desc {
+    margin-bottom: 80px;
+  }
+  .partner {
+    margin-bottom: 0;
+  }
+}
 .customer {
   margin-bottom: 65px;
 }
@@ -607,6 +612,7 @@ body {
   .footer-container {
     display: flex;
     flex-direction: column-reverse;
+    transform: translateY(-15%);
   }
   .footer-right {
     margin-bottom: 50px;

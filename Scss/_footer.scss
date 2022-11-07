@@ -47,6 +47,7 @@
     &-container {
       display: flex;
       flex-direction: column-reverse;
+      transform: translateY(-15%);
     }
     &-right {
       margin-bottom: 50px;

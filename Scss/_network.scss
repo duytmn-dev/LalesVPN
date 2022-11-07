@@ -21,7 +21,12 @@
   margin-bottom: 50px;
 }
 @media screen and (max-width: 767.98px) {
-  .network,
+  .network {
+    &-desc {
+      margin-bottom: 80px;
+    }
+  }
   .partner {
+    margin-bottom: 0;
   }
 }
