@@ -651,6 +651,7 @@ body {
   }
   .footer-right {
     margin-bottom: 50px;
+    gap: 0 40px;
   }
   .footer-contact {
     justify-content: space-evenly;
