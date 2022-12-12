@@ -1,4 +1,4 @@
-$(".customer-list").slick({
+$( ".customer-list" ).slick( {
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -24,4 +24,19 @@ $(".customer-list").slick({
       },
     },
   ],
-});
+} );
+
+
+const toggle = document.querySelector( ".menu-toggle" )
+const menu = document.querySelector( ".menu" )
+const isShow = "isShow"
+
+toggle.addEventListener( 'click', () => {
+  menu.classList.add( isShow )
+} )
+window.addEventListener( 'click', function ( e ) {
+  if ( !menu.contains( e.target ) && !e.target.matches( ".menu-toggle" ) )
+  {
+    menu.classList.remove( isShow )
+  }
+} );
